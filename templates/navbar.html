@@ -39,10 +39,12 @@
           {% else %}
 
           <!-- Not Logged In -->
-           <a href="{% url 'login' %}">
-            <img src="{% static 'images/avatar.svg' %}" />
-            <p>Login</p>
-          </a>
+          <div>
+            <p>
+              <img src="{% static 'images/avatar.svg' %}" />
+              <a href="{% url 'login' %}">Login</a> <a href="{% url 'register' %}">Sign Up</a>
+            </p>
+            </div>
           {% endif %}
 
           <div class="dropdown-menu">
